@@ -320,7 +320,7 @@ module Blogger
       @published = entry.published
       puts "entry is:\n"
       puts entry.methods
-      @link = entry.link
+      #@link = entry.link
       @authors = []
       @authors = entry.authors.map {|c| c.name}
       #entry.authors.each do |author|
