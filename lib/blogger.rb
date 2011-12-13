@@ -318,6 +318,7 @@ module Blogger
 
       # jvaldivia Added published and author
       @published = entry.published
+      @link = entry.links
       @authors = []
       @authors = entry.authors.map {|c| c.name}
       #entry.authors.each do |author|
