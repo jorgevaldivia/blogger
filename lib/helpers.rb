@@ -1,4 +1,4 @@
-require 'atom/feed' 
+#require 'atom/feed' 
 class ::String
   
   # atom/feed fudges up the atom feed google gives us so we have to manually insert some stuff
