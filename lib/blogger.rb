@@ -292,7 +292,6 @@ module Blogger
     #
     def initialize(opts = {})
       @categories = []
-      @authors = []
       if opts[:atom]
         parse opts[:atom]
       else
@@ -318,7 +317,8 @@ module Blogger
 
       # jvaldivia Added published and author
       @published = entry.published
-      @authors = entry.authors[0].name
+      @authors = []
+      #@authors = entry.authors[0].name
       entry.authors.each do |author|
         @authors << author
       end
