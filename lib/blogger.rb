@@ -281,6 +281,7 @@ module Blogger
     # jvaldivia Added accessors for published date and author
     attr_accessor :published
     attr_accessor :authors
+    attr_accessor :link
     
     # Pass in a hash containing pre-set values if you'd like, including
     #    * :title  -  the title of the post
@@ -317,6 +318,7 @@ module Blogger
 
       # jvaldivia Added published and author
       @published = entry.published
+      @link = entry.link
       @authors = []
       @authors = entry.authors.map {|c| c.name}
       #entry.authors.each do |author|
