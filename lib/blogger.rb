@@ -318,9 +318,9 @@ module Blogger
 
       # jvaldivia Added published and author
       @published = entry.published
-      puts "entry is:\n"
-      puts entry.methods
-      #@link = entry.link
+      #puts "entry is:\n"
+      #puts entry.methods
+      @link = entry.links[0]
       @authors = []
       @authors = entry.authors.map {|c| c.name}
       #entry.authors.each do |author|
