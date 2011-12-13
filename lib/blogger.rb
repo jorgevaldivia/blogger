@@ -319,7 +319,7 @@ module Blogger
       # jvaldivia Added published and author
       @published = entry.published
       puts "entry is:\n"
-      puts entry.inspect
+      puts entry.methods
       @link = entry.link
       @authors = []
       @authors = entry.authors.map {|c| c.name}
