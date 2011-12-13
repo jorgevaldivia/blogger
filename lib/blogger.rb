@@ -1,5 +1,5 @@
 require File.dirname(__FILE__)+'/google_auth.rb'
-require 'atom/feed' 
+#require 'atom/feed' 
 require File.dirname(__FILE__)+'/helpers.rb'
 module Blogger
   VERSION = '0.5.1'
