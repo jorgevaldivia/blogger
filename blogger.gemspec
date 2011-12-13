@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["jorge@softwareallies.com"]
   s.homepage    = ""
   s.summary     = %q{Blogger gem with some enhancements}
-  s.description = %q{I noticed that the original blogger gem was not returning some fields. I didn't find a repo I could fork, so, I just created this.}
+  s.description = %q{I noticed that the original blogger gem was not returning some fields. I didnt find a repo I could fork, so, I just created this.}
 
   s.rubyforge_project = "blogger"
 
@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+
+  s.add_runtime_dependency "atom"
 end
