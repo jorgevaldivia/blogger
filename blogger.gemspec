@@ -23,4 +23,5 @@ Gem::Specification.new do |s|
   # s.add_runtime_dependency "rest-client"
 
   s.add_runtime_dependency "atom"
+  s.add_runtime_dependency "atom-tools"
 end
