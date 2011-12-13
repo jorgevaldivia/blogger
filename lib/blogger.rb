@@ -321,7 +321,8 @@ module Blogger
       #puts "entry is:\n"
       #puts entry.methods
       @link = entry.links[0]
-      @link = entry.links[0].attributes['href'] 
+      @link = entry.get_elems
+      puts "entry: #{entry.get_elems}\n"
       @authors = []
       @authors = entry.authors.map {|c| c.name}
       #entry.authors.each do |author|
